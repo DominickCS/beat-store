@@ -1,10 +1,20 @@
+"use client";
 import BeatPlayer from "./components/BeatPlayer";
 
 export default function Home() {
   return (
-    <div>
-      <BeatPlayer></BeatPlayer>
-      <p className="text-3xl text-center">Hello World!</p>
-    </div>
+    <>
+      <div className="grid grid-cols-3 gap-8">
+        <BeatPlayer />
+        <BeatPlayer />
+        <BeatPlayer />
+        <BeatPlayer />
+        <BeatPlayer />
+        <BeatPlayer />
+        <BeatPlayer />
+        <BeatPlayer />
+        <BeatPlayer />
+      </div>
+    </>
   );
 }
