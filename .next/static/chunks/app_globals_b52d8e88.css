@@ -5,6 +5,7 @@
   :root, :host {
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
+    --color-white: #fff;
     --spacing: .25rem;
     --default-font-family: var(--font-sans);
     --default-font-feature-settings: var(--font-sans--font-feature-settings);
@@ -208,8 +209,16 @@
     justify-content: center;
   }
 
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
+
   .gap-8 {
     gap: calc(var(--spacing) * 8);
+  }
+
+  .text-white {
+    color: var(--color-white);
   }
 
   .antialiased {

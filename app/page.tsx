@@ -8,12 +8,6 @@ export default function Home() {
         <BeatPlayer />
         <BeatPlayer />
         <BeatPlayer />
-        <BeatPlayer />
-        <BeatPlayer />
-        <BeatPlayer />
-        <BeatPlayer />
-        <BeatPlayer />
-        <BeatPlayer />
       </div>
     </>
   );
