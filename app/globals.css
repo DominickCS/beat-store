@@ -26,7 +26,7 @@ body {
 }
 
 .beatContainer {
-  background-color: black;
+  background-color: grey;
   border: solid black 4px;
   border-radius: 16px;
   width: 300px;

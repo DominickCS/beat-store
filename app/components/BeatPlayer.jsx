@@ -1,3 +1,4 @@
+"use client";
 import React, { Component } from "react";
 import ReactPlayer from "react-player";
 import Image from "next/image";
@@ -9,6 +10,7 @@ export default class BeatPlayer extends Component {
 
   handlePlayPause = () => {
     this.setState({ playing: !this.state.playing });
+    this.setState({ played });
   };
 
   render() {
@@ -27,15 +29,15 @@ export default class BeatPlayer extends Component {
             ></Image>
           </div>
           <div className="flex justify-center">
-            <ReactPlayer
-              playing={playing}
-              className="BeatPlayer"
-              height={30}
-              url="/test.mp3"
-            />
+            <ReactPlayer playing={playing} height={5} url="/test2.mp3" />
           </div>
-          <button className="text-white" onClick={this.handlePlayPause}>
-            Play
+          <button className="ml-4" onClick={this.handlePlayPause}>
+            <Image
+              src={"/img/playPause.svg"}
+              width={30}
+              height={30}
+              alt="play and pause button"
+            ></Image>
           </button>
         </div>
       </div>
